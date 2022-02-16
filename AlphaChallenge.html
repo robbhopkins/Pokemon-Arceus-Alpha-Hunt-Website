@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Pokemon: Legends Arceus - Alpha Hunt Challenge</title>
+      <link rel="stylesheet" href="AlphaChallenge.css">
+   </head>
+
+   <body>
+
+    <t1>
+        ALPHA HUNT
+    </t1>
+    <br>
+    <br>
+    An Alpha Hunt is a competitive challenge in which you and your friends compete to see who can be the first to take down all of the targets in an area with limited resources.
+    <br>
+    Players start by catching the a starting pokemon and boxing the rest of their team. They then empty their inventory (save for a few ultra/jet balls, in case a shiny appears).
+    <br>
+    Generate a list of 3 target Alpha Pokemon will be generated below. It will be up to the players to take down these alphas using only the resources they craft and the pokemon they catch.
+    <br>
+    <em>
+    * To increase the challenge, you may not use Hisuian Brviary to fly, you can only use standard pokeballs, you can not catch any alphas, and you must box any pokemon that faint.
+    </em><br>
+    The starting line will be the tent of the initial basecamp for the area. After a countdown, players will rest until the determined time of day. Once their character wakes up, the race has begun!
+    <br>
+    Happy hunting!
+     
+    <br>
+    <br>
+      
+    <form>
+        <label for="locations">Choose a location:</label>
+        <select name="locations" id="locations">
+        <option value="r">Random</option>
+        <option value="of">Obidian Fieldlands</option>
+        <option value="cm">Crimson Mirelands</option>
+        <option value="cc">Cobalt Coastlands</option>
+        <option value="ch">Coronet Highlands</option>
+        <option value="ai">Alabaster Icelands</option>
+        </select>
+        <button type="button" onclick="generate()">Generate</button>
+    </form>
+
+    <br>
+    <br>
+
+    <tag id ='reveal' hidden = 'true'>
+    Mission:
+    <table id='Mission'>
+    <tr>
+        <th>
+            Location
+        </th>
+        <th>
+            Time of Day
+        </th>
+        <th>
+            Starting Pokemon
+        </th>
+    </tr>
+    </table>
+
+    <br>
+    <br>
+    Targets:
+    <table id='Targets'>
+        <tr>
+            <th>
+                Target #1
+            </th>
+            <th>
+                Target #2
+            </th>
+            <th>
+                Target #3
+            </th>
+        </tr>
+    </table>
+    </tag>
+
+   </body>
+   <script src="AlphaChallenge.js"></script>
+</html>
